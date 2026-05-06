@@ -1,0 +1,55 @@
+/* The parent must have overflow hidden so the glare stays inside */
+.img-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background-color: #f9f9f9;
+}
+
+.img-container img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: transform 0.5s ease;
+}
+
+/* Create the Glare/Shine */
+.img-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -150%; /* Start completely off-screen to the left */
+  width: 50%;
+  height: 100%;
+  
+  /* The diagonal "light" beam */
+  background: linear-gradient(
+    to right, 
+    rgba(255, 255, 255, 0) 0%, 
+    rgba(255, 255, 255, 0.3) 50%, 
+    rgba(255, 255, 255, 0) 100%
+  );
+  
+  transform: skewX(-25deg); /* Slant the beam */
+  transition: none; 
+}
+
+/* Trigger the animation on hover */
+.watch-card:hover .img-container::after {
+  left: 150%; /* Move it all the way to the right */
+  transition: left 1.5s ease-in-out;
+}
+
+/* Optional: Slight zoom on image when hovering */
+.watch-card:hover img {
+  transform: scale(1.05);
+}
+
+/* Basic styling to match the video */
+.watch-card {
+  width: 250px;
+  border: 1px solid #eee;
+  padding: 15px;
+  text-align: center;
+  font-family: sans-serif;
+}
