@@ -1,6 +1,6 @@
 # Live Link
 
-- [@vitejs/plugin-react](https://iftekhar-main-portfolio.vercel.app/) uses [Oxc](https://oxc.rs)
+- [Click the link to go to the site](https://iftekhar-main-portfolio.vercel.app/)
 
 
 # React + Vite
