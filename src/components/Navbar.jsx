@@ -43,7 +43,7 @@ export default function Navbar() {
             <li key={link}>
               <a
                 href={`#${link.toLowerCase()}`}
-                className="nav-link text-sm font-sans font-light tracking-widest uppercase text-ink/70 hover:text-ink transition-colors duration-200"
+                className="nav-link text-sm font-sans font-light tracking-widest uppercase text-ink/70 hover:text-ink hover:bg-[#00056e] hover:text-white transition-colors duration-200"
                 data-cursor="Go"
               >
                 {link}
