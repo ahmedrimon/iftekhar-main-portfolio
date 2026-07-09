@@ -31,7 +31,7 @@ export default function Navbar() {
         {/* Logo */}
         <a
           href="#"
-          className="font-display font-bold text-lg tracking-tight text-ink select-none"
+          className="hover:bg-[#07238a] hover:text-white font-display font-bold text-lg tracking-tight text-ink select-none"
           data-cursor="Home"
         >
           IA<span className="text-muted">.</span>
@@ -43,7 +43,7 @@ export default function Navbar() {
             <li key={link}>
               <a
                 href={`#${link.toLowerCase()}`}
-                className="nav-link text-sm font-sans font-light tracking-widest uppercase text-ink/70 hover:text-ink hover:bg-[#00056e] hover:text-white transition-colors duration-200"
+                className="nav-link text-sm font-sans font-light tracking-widest uppercase text-ink/70 hover:text-ink hover:bg-[#07238a] hover:bg-size-[auto_100px] hover:transition-colors hover:ease-in-out hover:text-white transition-colors duration-200"
                 data-cursor="Go"
               >
                 {link}
@@ -55,7 +55,7 @@ export default function Navbar() {
         {/* CTA */}
         <a
           href="#contact"
-          className="hidden md:inline-flex items-center gap-2 text-sm font-mono tracking-wider uppercase border border-ink/20 px-5 py-2.5 hover:bg-ink hover:text-paper transition-all duration-300"
+          className="hover:bg-[#07238a] hover:text-white hidden md:inline-flex items-center gap-2 text-sm font-mono tracking-wider uppercase border border-ink/20 px-5 py-2.5 hover:bg-ink hover:text-paper transition-all duration-300"
           data-cursor="Talk"
         >
           Available for work
