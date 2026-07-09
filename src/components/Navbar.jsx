@@ -25,12 +25,12 @@ export default function Navbar() {
       <nav
         ref={navRef}
         className={`fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-8 md:px-12 py-6 transition-colors duration-500 ${
-          scrolled ? 'bg-[#e7e4dd] backdrop-blur-sm' : 'bg-transparent'
+          scrolled ? 'bg-[#07238a] backdrop-blur-sm text-white' : 'bg-transparent'
         }`}
       >
         {/* Logo */}
         <a
-          href="#"
+          href="/"
           className="hover:bg-[#07238a] hover:text-white font-display font-bold text-lg tracking-tight text-ink select-none"
           data-cursor="Home"
         >
@@ -75,7 +75,7 @@ export default function Navbar() {
 
       {/* Mobile menu */}
       <div
-        className={`fixed inset-0 z-40 bg-[#e7e4dd] flex flex-col justify-center px-8 transition-transform duration-500 ease-in-out ${
+        className={`fixed inset-0 z-40 bg-[#07238a] flex flex-col justify-center px-8 transition-transform duration-500 ease-in-out ${
           menuOpen ? 'translate-x-0' : 'translate-x-full'
         }`}
       >
@@ -85,7 +85,7 @@ export default function Navbar() {
               <a
                 href={`#${link.toLowerCase()}`}
                 onClick={() => setMenuOpen(false)}
-                className="font-display font-bold text-5xl text-ink"
+                className="text-white font-display font-bold text-5xl text-ink"
               >
                 {link}
               </a>
