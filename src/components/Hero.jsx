@@ -60,13 +60,13 @@ export default function Hero() {
       {/* Main heading */}
       <div className="flex-1 flex flex-col justify-center">
         <div className="mb-6">
-          <div className="clip-reveal">
+          <div className="clip-reveal hover:bg-[#07238a] hover:text-white">
             <h1 className="hero-line font-display font-black text-[clamp(3.5rem,10vw,9rem)] leading-[0.9] tracking-tight text-ink">
               Iftekhar
             </h1>
           </div>
           <div className="clip-reveal">
-            <h1 className="hero-line font-display font-black text-[clamp(3.5rem,10vw,9rem)] leading-[0.9] tracking-tight text-ink italic">
+            <h1 className="hover:bg-[#07238a] hover:text-white hero-line font-display font-black text-[clamp(3.5rem,10vw,9rem)] leading-[0.9] tracking-tight text-ink italic">
               Ahmed
             </h1>
           </div>
@@ -133,6 +133,7 @@ export default function Hero() {
           ))}
         </div>
       </div>
+      {/* Something try */}
     </section>
   )
 }
