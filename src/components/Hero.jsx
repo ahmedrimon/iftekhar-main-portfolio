@@ -1,3 +1,4 @@
+'use client';
 import { useEffect, useRef } from 'react'
 import { gsap } from 'gsap'
 
@@ -60,13 +61,13 @@ export default function Hero() {
       {/* Main heading */}
       <div className="flex-1 flex flex-col justify-center">
         <div className="mb-6">
-          <div className="clip-reveal hover:bg-[#07238a] hover:text-white">
+          <div className="clip-reveal">
             <h1 className="hero-line font-display font-black text-[clamp(3.5rem,10vw,9rem)] leading-[0.9] tracking-tight text-ink">
               Iftekhar
             </h1>
           </div>
           <div className="clip-reveal">
-            <h1 className="hover:bg-[#07238a] hover:text-white hero-line font-display font-black text-[clamp(3.5rem,10vw,9rem)] leading-[0.9] tracking-tight text-ink italic">
+            <h1 className="hero-line font-display font-black text-[clamp(3.5rem,10vw,9rem)] leading-[0.9] tracking-tight text-ink italic">
               Ahmed
             </h1>
           </div>
@@ -90,7 +91,7 @@ export default function Hero() {
           <div ref={ctaRef} className="flex flex-col sm:flex-row gap-4">
             <a
               href="#work"
-              className="group inline-flex items-center gap-3 bg-ink text-paper px-7 py-4 text-sm font-mono tracking-widest uppercase hover:bg-ink/80 transition-colors duration-300"
+              className="hover:bg-[#07238a] hover:text-white group inline-flex items-center gap-3 bg-ink text-paper px-7 py-4 text-sm font-mono tracking-widest uppercase hover:bg-ink/80 transition-colors duration-300"
               data-cursor="View"
             >
               View work
@@ -98,7 +99,7 @@ export default function Hero() {
             </a>
             <a
               href="#contact"
-              className="inline-flex items-center gap-3 border border-ink/25 text-ink px-7 py-4 text-sm font-mono tracking-widest uppercase hover:border-ink transition-colors duration-300"
+              className="hover:bg-[#07238a] hover:text-white inline-flex items-center gap-3 border border-ink/25 text-ink px-7 py-4 text-sm font-mono tracking-widest uppercase hover:border-ink transition-colors duration-300"
               data-cursor="Talk"
             >
               Get in touch
@@ -133,7 +134,6 @@ export default function Hero() {
           ))}
         </div>
       </div>
-      {/* Something try */}
     </section>
   )
 }
