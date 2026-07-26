@@ -49,7 +49,7 @@ export default function Skills() {
       className="px-8 md:px-12 py-24 md:py-32 bg-ink text-paper"
     >
       {/* Header */}
-      <div className="flex items-center gap-6 mb-20">
+      <div className="hover:bg-[#07238a] hover:text-white flex items-center gap-6 mb-20">
         <span className="font-mono text-[10px] tracking-[0.3em] uppercase text-paper/30">
           Tech Stack
         </span>
@@ -74,7 +74,7 @@ export default function Skills() {
 
         {/* Skill bars */}
         {skills.map((skill, i) => (
-          <div key={skill.name} className="skill-label border-b border-paper/10 py-5 opacity-0">
+          <div key={skill.name} className="hover:bg-[#07238a] hover:text-white skill-label border-b border-paper/10 py-5 opacity-0">
             <div className="flex items-center justify-between mb-3">
               <span className="font-sans font-light text-sm text-paper/80 tracking-wide">
                 {skill.name}
@@ -102,7 +102,7 @@ export default function Skills() {
           {['Git', 'Vite', 'Webpack', 'Storybook', 'Firebase', 'Supabase', 'Figma', 'Playwright'].map((tool) => (
             <span
               key={tool}
-              className="font-mono text-xs tracking-wider uppercase px-3.5 py-1.5 border border-paper/15 text-paper/50 hover:border-paper/40 hover:text-paper/80 transition-colors duration-200 cursor-default"
+              className="hover:bg-[#07238a] hover:text-white font-mono text-xs tracking-wider uppercase px-3.5 py-1.5 border border-paper/15 text-paper/50 hover:border-paper/40 hover:text-paper/80 transition-colors duration-200 cursor-default"
             >
               {tool}
             </span>

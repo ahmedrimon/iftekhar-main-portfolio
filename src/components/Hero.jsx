@@ -44,8 +44,7 @@ export default function Hero() {
         .fromTo(
           marqueeRef.current,
           { opacity: 0 },
-          { opacity: 1, duration: 1 },
-          1.3
+          { opacity: 1, duration: 20, repeat: -1 }
         )
     }, containerRef)
 
@@ -90,7 +89,7 @@ export default function Hero() {
 
           <div ref={ctaRef} className="flex flex-col sm:flex-row gap-4">
             <a
-              href="#work"
+              href="#projects"
               className="hover:bg-[#07238a] hover:text-white group inline-flex items-center gap-3 bg-ink text-paper px-7 py-4 text-sm font-mono tracking-widest uppercase hover:bg-ink/80 transition-colors duration-300"
               data-cursor="View"
             >

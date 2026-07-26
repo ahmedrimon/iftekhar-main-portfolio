@@ -66,7 +66,7 @@ export default function Contact() {
                 href={href}
                 target="_blank"
                 rel="noreferrer"
-                className="group flex items-center justify-between py-5 border-b border-ink/10 hover:border-ink/30 transition-colors duration-300"
+                className="hover:bg-[#07238a] hover:text-white group flex items-center justify-between py-5 border-b border-ink/10 hover:border-ink/30 transition-colors duration-300"
                 data-cursor="Open"
               >
                 <span className="font-mono text-[10px] tracking-[0.2em] uppercase text-muted">

@@ -70,7 +70,7 @@ function ProjectRow({ project, index }) {
       {projects.map((project, id) => (
         <a href={project.url} key={project.id}
     target="_blank" className="block">
-        <div className="flex items-center gap-6 md:gap-10 py-7 md:py-8 border-b border-[#0a0a0a] group-hover:border-ink/30 transition-colors duration-300 relative overflow-visible">
+        <div className="hover:bg-[#07238a] hover:text-white flex items-center gap-6 md:gap-10 py-7 md:py-8 border-b border-[#0a0a0a] group-hover:border-ink/30 transition-colors duration-300 relative overflow-visible">
           {/* Number */}
           <span className="font-mono text-xs tracking-widest text-[#9a9590] w-6 shrink-0">
             {project.num}
@@ -114,13 +114,7 @@ function ProjectRow({ project, index }) {
       ))}
 
       {/* Hover preview */}
-      {/* <div
-        ref={previewRef}
-        className="opacity-0 scale-95 pointer-events-none"
-        style={{ position: 'absolute', right: '4rem', top: '50%', transform: 'translateY(-50%)' }}
-      >
-        <ProjectPreview project={project}/>
-      </div> */}
+    
     </div>
   )
 }
