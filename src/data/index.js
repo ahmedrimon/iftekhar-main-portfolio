@@ -2,14 +2,14 @@ export const projects = [
   {
     id: 1,
     num: '01',
-    title: 'Icam Distribution',
+    title: 'Hgs-ECommerce',
     subtitle: 'Ecommerce Platform',
-    tags: ['React 18', 'TypeScript', 'WebSocket', 'Recharts'],
-    year: '2024',
+    tags: ['Nextjs 14', 'React 18', 'Tailwind CSS', 'Context API', 'Node.js', 'Stripe'],
+    year: '2026',
     type: 'SaaS',
     color: '#d4cfc8',
-    description: 'Real-time developer analytics with GitHub integration, code review metrics, and team performance tracking for engineering teams of 5–500.',
-    url: 'https://icam-distribution.vercel.app/'
+    description: 'Luxury e-commerce platform offering premium scented candles, liquid soaps, and perfumes with seamless online shopping.',
+    url: 'https://hgs-ecommerce.vercel.app/'
   },
   {
     id: 2,
